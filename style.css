@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(13, 13, 13);
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #ff4040;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: rgb(229, 228, 228);
+  opacity: 0.7;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  width: 280px;
+}
+
+.search-container button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #ff4040;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-container button:hover {
+  background-color: #e54545;
+}
+
+#result-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.movie {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie h3 {
+  margin: 0.5rem 0;
+}
+
+.movie p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+#movie-details {
+  background-color: white;
+  color: black;
+  width: 70%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+#back-btn {
+  background-color: #ff4040;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background-color: #e54545;
+}
+
+.movie-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#error-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(215, 82, 82);
+  color: #ff4040;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container input {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .movie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #movie-details {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+
